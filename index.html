@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- lang tells browsers and screen readers the page language -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: unique, descriptive title -->
+  <title>Sunrise Bakery | Fresh Bread, Cakes and Cookies in Ghaziabad</title>
+
+  <!-- SEO: description shown in search results -->
+  <meta name="description" content="Sunrise Bakery bakes fresh sourdough bread, cakes and cookies every morning using local ingredients. View our menu and contact us.">
+  <meta name="keywords" content="bakery, fresh bread, cakes, cookies, sourdough">
+  <meta name="author" content="Kushal">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph tags: how the page looks when shared on social media -->
+  <meta property="og:title" content="Sunrise Bakery">
+  <meta property="og:description" content="Fresh bread, cakes and cookies baked every morning.">
+  <meta property="og:type" content="website">
+
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; margin: 0; }
+    header, main, footer { max-width: 800px; margin: auto; padding: 15px 20px; }
+    header { background: #f3e3cf; max-width: none; }
+    header .inner { max-width: 800px; margin: auto; }
+    nav a { margin-right: 15px; color: #5a2d0c; font-weight: bold; }
+    a:focus, input:focus, button:focus { outline: 3px solid #1a5fb4; }
+    img { max-width: 100%; height: auto; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input { padding: 8px; width: 100%; max-width: 320px; }
+    button { margin-top: 10px; padding: 10px 18px; background: #5a2d0c; color: #fff; border: none; cursor: pointer; }
+    footer { border-top: 1px solid #ccc; color: #444; }
+    /* Skip link: visible only when focused with the keyboard */
+    .skip { position: absolute; left: -999px; }
+    .skip:focus { left: 10px; top: 10px; background: #fff; padding: 8px; }
+  </style>
+</head>
+<body>
+
+  <a class="skip" href="#main-content">Skip to main content</a>
+
+  <!-- Semantic HTML: header, nav, main, section, article, footer -->
+  <header>
+    <div class="inner">
+      <p><strong>Sunrise Bakery</strong></p>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Proper heading structure: one h1, then h2, then h3 -->
+    <section id="home">
+      <h1>Sunrise Bakery: Fresh Bread Baked Every Morning</h1>
+      <!-- alt text describes the image for screen readers and search engines -->
+      <img
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='200'%3E%3Crect width='600' height='200' fill='%23d9a066'/%3E%3C/svg%3E"
+        alt="Golden loaves of freshly baked bread on a wooden counter"
+        width="600" height="200">
+      <p>We bake bread, cakes and cookies using local ingredients.</p>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <article>
+        <h3>Sourdough Loaf</h3>
+        <p>Slow-fermented and crusty. Rs 120.</p>
+      </article>
+      <article>
+        <h3>Chocolate Cake</h3>
+        <p>Rich dark chocolate with soft sponge. Rs 450.</p>
+      </article>
+      <!-- Descriptive link text instead of "click here" -->
+      <p><a href="#menu">View our full bakery menu</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <!-- label linked to the input with for/id -->
+        <label for="email">Your email address</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sunrise Bakery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
